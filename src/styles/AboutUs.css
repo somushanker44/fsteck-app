@@ -1,0 +1,61 @@
+/* AboutUs.css */
+
+.about-us-container {
+  padding: 20px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.page-header p {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.section-container {
+  margin-bottom: 50px;
+}
+
+.section-container .row {
+  align-items: center;
+}
+
+.sub-header-style {
+  color: #007bff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.usp-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.usp-list li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.me-2 {
+  margin-right: 8px;
+  color: #007bff;
+}

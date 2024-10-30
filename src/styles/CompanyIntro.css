@@ -1,0 +1,85 @@
+.company-intro {
+  width: 100%;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.company-intro-container {
+  display: flex;
+  max-width: 1200px;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.company-image {
+  flex: 1;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.company-content {
+  flex: 2;
+  text-align: left;
+}
+
+.company-content h5 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.company-content h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.company-content p {
+  font-size: 1rem;
+  color: #495057;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.cta-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive layout for screen sizes below 992px */
+@media (max-width: 992px) {
+  .company-intro-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .company-image {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .company-content h2 {
+    font-size: 2rem;
+  }
+
+  .company-content p {
+    font-size: 1rem;
+  }
+}

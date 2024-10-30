@@ -1,0 +1,29 @@
+/* src/styles/TransformationSection.css */
+.transformation-section {
+  background: linear-gradient(to right, #0072ff, #0056d4);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.transformation-section h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.transformation-section p {
+  font-size: 1.2em;
+  margin: 10px 0 0;
+}
+
+/* Media query for screens below 992px */
+@media (max-width: 992px) {
+  .transformation-section h2 {
+    font-size: 1.5em; /* Adjusted font size for smaller screens */
+  }
+
+  .transformation-section p {
+    font-size: 1em; /* Adjusted font size for smaller screens */
+  }
+}

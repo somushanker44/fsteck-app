@@ -1,9 +1,17 @@
+import { HeroSlider } from '../components/HeroSlider';
+import CompanyIntro from '../components/CompanyIntro';
+import OurServices from '../components/OurServices';
+import TransformationSection from '../components/TransformationSection';
+import '../styles/Home.css';
+
 const Home = () => {
   return (
-    <section id="home">
-      <h2>Welcome to My Static Site</h2>
-      <p>This is a simple static site built with React.</p>
-    </section>
+    <div id="home">
+      <HeroSlider />
+      <CompanyIntro />
+      <OurServices />
+      <TransformationSection />
+    </div>
   );
 };
 
