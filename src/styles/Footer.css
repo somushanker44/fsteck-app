@@ -1,0 +1,39 @@
+.footer-container {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  position: relative;
+  margin-top: 40px;
+}
+
+.footerLinkStyle {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footerLinkStyle:hover {
+  color: #bfc6ca;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .footerLinkStyle {
+    display: block;
+    text-align: center;
+  }
+}

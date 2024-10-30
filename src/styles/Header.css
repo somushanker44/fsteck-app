@@ -1,0 +1,125 @@
+/* Gradient header styling */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  /* Blue gradient */
+  color: #ffffff;
+  z-index: 100;
+  /* Ensures header is on top */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0.5rem 2rem; */
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo-container {
+  flex: 1;
+  text-align: left;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive menu toggle */
+.menu-toggle {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ffffff;
+  display: none;
+}
+
+/* Style for close icon */
+.close-icon {
+  color: #ffffff;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  z-index: 120;
+  /* Ensures icon is on top in menu */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  /* Ensures overlay is on top */
+}
+
+/* Responsive Styles */
+@media (max-width: 1080px) {
+  .navbar {
+    padding: 0.5rem 2rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    flex: 1;
+    text-align: right;
+  }
+
+  .nav-links {
+    margin-top: 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    z-index: 110;
+    /* Higher z-index than header */
+  }
+
+  .nav-links li a {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+}
